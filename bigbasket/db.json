@@ -13,6 +13,7 @@
       "price": "23.07",
       "delievery_day_time": "Standard Delivery: Tomorrow 3:00PM - 7:30PM",
       "qty": "Qty",
+      "quantity": 5,
       "add_btn": "Add"
     },
     {
