@@ -14,39 +14,39 @@ import { useSelector } from "react-redux";
 import { RiTruckFill } from "react-icons/ri";
 import { GiSevenPointedStar } from "react-icons/gi";
 import SimilarProduct from "../component/SimilarProduct";
-import ReactImageMagnify from "react-image-magnify";
+// import ReactImageMagnify from "react-image-magnify";
 import Subcategory from "../component/Subcategory";
 import { useDispatch } from "react-redux";
 import { add_products } from "../Redux/CartReducer/action";
 import Navbar from "../organisam/Navbar";
 import Footer from "../organisam/Footer";
 
-const ImageSingle = ({ image }) => {
-  // console.log("Image", { image });
+// const ImageSingle = ({ image }) => {
+//   // console.log("Image", { image });
 
-  return (
-    <>
-      <div style={{ width: "100", height: "350px" }}>
-        <ReactImageMagnify
-          {...{
-            smallImage: {
-              alt: "Wristwatch by Ted Baker London",
-              isFluidWidth: true,
-              src: image,
-              width: 300,
-              height: 350,
-            },
-            largeImage: {
-              src: image,
-              width: 800,
-              height: 800,
-            },
-          }}
-        />
-      </div>
-    </>
-  );
-};
+//   return (
+//     <>
+//       <div style={{ width: "100", height: "350px" }}>
+//         <ReactImageMagnify
+//           {...{
+//             smallImage: {
+//               alt: "Wristwatch by Ted Baker London",
+//               isFluidWidth: true,
+//               src: image,
+//               width: 300,
+//               height: 350,
+//             },
+//             largeImage: {
+//               src: image,
+//               width: 800,
+//               height: 800,
+//             },
+//           }}
+//         />
+//       </div>
+//     </>
+//   );
+// };
 
 const SingleProduct = () => {
   const toast = useToast();
@@ -125,7 +125,7 @@ const SingleProduct = () => {
                 rowGap={"3rem"}
               >
                 <Box zIndex={100}>
-                  <ImageSingle image={singleProduct.img_src} />
+                  {/* <ImageSingle image={singleProduct.img_src} /> */}
                 </Box>
                 <Box>
                   <Box>
